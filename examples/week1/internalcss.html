@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Internal CSS Example</title>
+    <style>
+      h1{
+        color: red;
+      }
+      p{
+        color: blue;
+      }
+      #p1{
+        font-style: italic;
+      }
+      .boldText {
+        font-weight: bold;
+      }
+
+      .card{
+        background-color: lightgrey;
+        border: 10px outset gray;
+        border-radius: 20px;
+        box-shadow: 10px 10px 50px 2px rgba(0, 0, 0, 0.5);
+        /*rgba -> r: 0-255, g: 0-255, b:0-255, a:0-1 */
+        /* offset-x, offset-y, blur-radius, spread-radius, color */
+        margin: 40px;
+        padding: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is an example page for Internal CSS.</h1>
+    <p id="p1">Example P tag 1</p>
+    <p class="boldText">Example P tag 2</p>
+    <p class="boldText">Example P tag 3</p>
+
+    <div class="card">
+      This is an example of a card.
+    </div>
+
+    <div class="card">
+      This is another example of a card.
+    </div>
+
+    <p class="card">
+      This is a p tag with the card styles.
+    </p>
+  </body>
+</html>
