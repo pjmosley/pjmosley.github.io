@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HTML Tables Example</title>
+    <style>
+    #monthlyTable,
+    #monthlyTable caption,
+    #monthlyTable th,
+    #monthlyTable td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 12px;
+      color: white;
+    }
+     /*#tableHead {
+      background-color: gray;
+    }
+    #tableCell {
+      background-color: skyblue;
+    } */
+    #column {
+      background-color: green;
+    }
+    #uglyTable {
+      margin-bottom: 48px;
+    }
+    }
+    </style>
+  </head>
+  <body>
+      <h1>Monthly bills</h1>
+    <table id="monthlyTable">
+      <colgroup>
+        <col id="column" span="4">
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr id="tableHead">
+          <th>Bill</th>
+          <th>April</th>
+          <th>May</th>
+          <th>June</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr id="tableCell">
+          <td>Phone</td>
+          <td>$120</td>
+          <td>$140</td>
+          <td>$140</td>
+        </tr>
+        <tr>
+          <td>Gas</td>
+          <td>$90</td>
+          <td>$100</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Food</td>
+          <td>$280</td>
+          <td>$280</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
