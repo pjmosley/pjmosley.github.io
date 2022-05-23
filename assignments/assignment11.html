@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 11</title>
+    <style>
+      body {
+        font-family: Impact;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .flexChild {
+        background-color: lavender;
+        border: 2px solid gray;
+        border-radius: 4px;
+        font-size: 24px;
+        font-weight: bold;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        padding: 8px 14px;
+      }
+      .flexChildTall {
+      height: 100px;
+      }
+      .flexChildWide {
+      text-align: center;
+      width: 300px;
+      }
+      .flexContainer {
+        background-color: lightgreen;
+        border-radius: 4px;
+        display: flex;
+      }
+      .flexDirection {
+        flex-direction: row-reverse;
+      }
+      .flexWrap {
+        flex-wrap: wrap;
+      }
+      .alignItems {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .justifyContent {
+        flex-direction: row;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex Container 1</h2>
+    <div class="flexContainer" >
+      <div class="flexChild">A</div>
+      <div class="flexChild">B</div>
+      <div class="flexChild">C</div>
+    </div>
+    <h2>Flex Container 2</h2>
+    <div class="flexContainer flexWrap" >
+      <div class="flexChild flexChildWide">A</div>
+      <div class="flexChild flexChildWide">B</div>
+      <div class="flexChild flexChildWide">C</div>
+    </div>
+    <h2>Flex Container 3</h2>
+    <div class="flexContainer alignItems flexDirection">
+      <div class="flexChild">A</div>
+      <div class="flexChild flexChildTall">B</div>
+      <div class="flexChild">C</div>
+    </div>
+    <h2>Flex Container 4</h2>
+    <div class="flexContainer justifyContent">
+      <div class="flexChild flexChildWide">A</div>
+      <div class="flexChild flexChildWide">B</div>
+      <div class="flexChild flexChildWide">C</div>
+    </div>
+  </body>
+</html>
