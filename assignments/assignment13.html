@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid Examples</title>
+    <style>
+      .myGrid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr)
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas:
+        "myHeader myHeader myHeader myHeader myHeader"
+        "sidenav sidenav sidenav content content"
+        "footer footer footer footer footer";
+
+      }
+      header {
+        background-color: brown;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        grid-area: myHeader;
+      }
+      nav {
+        background-color: yellow;
+        padding: 36px;
+        grid-area: sidenav;
+      }
+      main {
+        padding: 36px;
+        grid-area: content;
+      }
+      .footer {
+        background-color: black;
+        grid-area: footer
+      }
+      img {
+        grid-area: content;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <header>
+        <h1>PJ's Example Grid</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>Title 1</li>
+          <li>Title 2</li>
+          <li>Title 3</li>
+          <li>Title 4</li>
+          <li>Title 5</li>
+          <li>Title 6</li>
+        </ul>
+      </nav>
+      <main>
+        <p>
+          Enim id te tempor quamquam, probant ab sunt doctrina.
+          Constias quo quis nostrud si id quid ut veniam ad ita non
+          elit minim culpa sed offendit duis anim qui aute. Si legam
+          sint export possumus, esse reprehenderit singulis enim
+          admodum, ita anim efflorescere a si ne multos labore
+          elit.Aliquip eram eiusmod fabulas an quibusdam magna sunt
+          proident fugiat, in ea tamen expetendis o hic culpa si fore.
+          Offendit irure nisi constias nisi de tempor singulis ita
+          illum noster de ne iudicem relinqueret, sed amet est dolor,
+          do si arbitrantur qui excepteur minim non offendit
+          coniunctione, do elit tempor a vidisse ubi aut summis
+          voluptate. Dolor arbitror cohaerescant, excepteur sint ipsum
+          ex anim, amet aut possumus o quid ad incurreret est dolor
+          officia, incididunt adipisicing se offendit quo fabulas sunt
+          id possumus transferrem, nam tamen consequat senserit, te
+          culpa ingeniis incurreret. Est nulla illum et iudicem an et
+          non dolore quibusdam.
+        </p>
+        <img src="../photos/store.jpg" width="600">
+        <p>
+          Doctrina irure anim voluptate fore, export vidisse
+          fidelissimae. Malis senserit eiusmod, sed dolore quamquam
+          nescius, irure excepteur ad coniunctione ex a amet quis id
+          incididunt iis ut magna culpa duis incididunt hic vidisse
+          quid dolor arbitror legam qui ita iis noster nisi legam ab
+          est mentitum non constias. Nescius aute fore quo quorum,
+          cernantur sed quid consequat, in fugiat labore se vidisse,
+          cernantur quem quis constias malis. Amet incididunt de
+          despicationes.Officia exquisitaque eu incididunt, malis
+          senserit eu praesentibus, minim quamquam et fidelissimae,
+          doctrina aut esse nostrud. Noster senserit ex tamen multos,
+          amet concursionibus iudicem multos expetendis iis summis
+          occaecat o illustriora ubi a malis nostrud proident. Ad
+          cillum vidisse sempiternum ea qui sed arbitrantur quo cillum
+          pariatur do irure noster se minim illustriora commodo labore
+          appellat.
+        </p>
+     </main>
+     <div class="footer">
+       copyright &copy; Pj's Webpage 2022
+     </div>
+    </div>
+</html>
