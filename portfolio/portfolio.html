@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>portfolio</title>
+    <title>Grid Examples</title>
     <style>
-      header img {
-        border: 10px dotted black;
+      .block {
+        padding: 20px;
+      }
+      .block1 {
+        background-color: black;
+      }
+      .block2 {
+        background-color: black;
+      }
+      .block3 {
+        background-color: black;
+      }
+      .block4 {
+        background-color: black;
+      }
+      .block5 {
+        background-color: black;
+
+      }
+      .block6 {
+        background-color: black;
+      }
+      .block7 {
+      background-color: black;
+      }
+      .block8 {
+        background-color: black;
+      }
+      .block9 {
+        background-color: black;
+      }
+      .myGrid {
+        display: grid;
+        /* repeat(2, 150px 50px) */
+        grid-template-columns: 330px 330px 330px;
+        grid-auto-rows: minmax(500px, auto);
+        gap: 40px 20px;
+        grid-template-areas:
+        "nav nav nav"
+        "sidenav picCol textCol"
+        "sidenav picCol textCol"
+        "sidenav footer footer";
+
+      }
+      img {
+        height: 445px;
+        justify-content: center;
+        content-align: center;
       }
 
-      h1 {
-        font-family: impact;
+      nav ul {
+        background-color: purple;
+        color: white;
+        list-style-type: none
+        margin: 0px;
+        padding: 0px;
       }
-        nav ul {
-          background-color: purple;
-          color: white;
-          list-style-type: none
-          margin: 0px;
-          padding: 0px;
-          text-align: center;
-        }
 
-        nav ul li {
-          background-color: purple;
-          display: inline-block;
-          padding: 12px 24px;
-        }
-       li a {
-          color: white;
-          text-decoration: none;
-        }
-
-
-        nav ul li:hover {
-          background-color: pink;
-
-
-        li:hover a {
+      nav ul li {
+        background-color: purple;
+        display: inline-block;
+        padding: 12px 24px;
+        grid-area:
+      }
+     li a {
+        color: white;
         text-decoration: none;
+      }
+
+
+      nav ul li:hover {
+        background-color: pink;
+
+      li:hover a {
+      text-decoration: none;
+      color: darkgray;
+
+      }
+
+      li:hover a,
+      li:active a {
         color: darkgray;
-
-        }
-
-        li:hover a,
-        li:active a {
-          color: darkgray;
-        }
-        img {
-          display: flex;
-          flex-direction: row;
-        }
-
+      }
     </style>
   </head>
   <body>
@@ -60,15 +97,18 @@
         <li><a href="portfolio/contact.html">Contact</a></li>
       </ul>
     </nav>
-      <header>
-        <img src="../photos/suspiria1.png" height="700">
-        <img src="../photos/suspiria2.jpg" height="700">
-        <img src="../photos/suspiria4.jpg" height="700">
-        <img src="../photos/suspirira3.jpg" height="700">
-        <img src="../photos/purple.jpg" height="700">
-        <img src="../photos/shalom.jpg" height="700">
-      </header>
-
-      
+    <br>
+    <br>
+    <div class="myGrid">
+      <div class="block block1"><img src="../photos/suspiria1.png"></div>
+      <div class="block block2"><img src="../photos/suspiria2.jpg"></div>
+      <div class="block block3"><img src="../photos/suspiria4.jpg"></div>
+      <div class="block block4"><img src="../photos/suspirira3.jpg"></div>
+      <div class="block block5"><img src="../photos/purple.jpg" height="350" width="300"></div>
+      <div class="block block6"><img src="../photos/shalom.jpg" height="400" width="300"></div>
+      <div class="block block7"><img src="../photos/dada1.jpg" height="350 width="280"></div>
+      <div class="block block8"><img src="../photos/dada2.jpg" height="350 width="280"></div>
+      <div class="block block9"><img src="../photos/dada3.jpg" height="350 width="280"></div>
+    </div>
   </body>
 </html>
