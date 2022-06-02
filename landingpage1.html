@@ -6,7 +6,7 @@
       nav ul {
         background-color: purple;
         color: white;
-        list-style-type: none
+        list-style-type: none;
         margin: 0px;
         padding: 0px;
         text-align: center;
@@ -25,6 +25,7 @@
 
       nav ul li:hover {
         background-color: pink;
+      }
 
 
       li:hover a {
@@ -37,6 +38,31 @@
       li:active a {
         color: darkgray;
       }
+      img {
+        width: 100vw;
+      }
+        @media screen and (min-width: 481px) and (max-width: 799px) {
+          nav ul  {
+            padding: 12px 16px;
+          }
+          img {
+            width: 800px;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+          nav ul {
+            display: flex;
+            flex-direction: column;
+          }
+          img {
+            width: 400px;
+          }
+
+        }
+
+
+
 
     </style>
   </head>
@@ -48,13 +74,11 @@
         <li><a href="portfolio/aboutme.html">About Me</a></li>
         <li><a href="portfolio/contact.html">Contact</a></li>
       </ul>
-
-      <img
-      src="photos/home.png"
-      width="1700px"
-      alt="home page my face"
-      />
-
     </nav>
+    <img
+    src="photos/home.png"
+    alt="home page my face"
+    />
+
   </body>
 </html>
