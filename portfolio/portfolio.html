@@ -5,8 +5,8 @@
     <style>
       .block {
         padding: 20px;
-        display: flex;
-        justify-content: center;
+        flex-basis: 33%;
+        box-sizing: border-box;
       }
       .block1 {
         background-color: black;
@@ -37,21 +37,12 @@
         background-color: black;
       }
       .myGrid {
-        display: grid;
-        /* repeat(2, 150px 50px) */
-        grid-template-columns: 330px 330px 330px;
-        grid-auto-rows: minmax(500px, auto);
-        gap: 40px 20px;
-        grid-template-areas:
-        "nav nav nav"
-        "sidenav picCol textCol"
-        "sidenav picCol textCol"
-        "sidenav footer footer";
+        display: flex;
+        flex-wrap: wrap;
+
       }
       img {
-        height: 445px;
-        justify-content: center;
-        content-align: center;
+        width: 100%;
       }
 
       nav ul {
@@ -60,6 +51,7 @@
         list-style-type: none
         margin: 0px;
         padding: 0px;
+        text-align: center;
       }
 
       nav ul li {
@@ -106,11 +98,11 @@
       <div class="block block2"><img src="../photos/suspiria2.jpg"></div>
       <div class="block block3"><img src="../photos/suspiria4.jpg"></div>
       <div class="block block4"><img src="../photos/suspirira3.jpg"></div>
-      <div class="block block5"><img src="../photos/purple.jpg" height="350" width="300"></div>
-      <div class="block block6"><img src="../photos/shalom.jpg" height="400" width="300"></div>
-      <div class="block block7"><img src="../photos/dada1.jpg" height="350 width="280"></div>
-      <div class="block block8"><img src="../photos/dada2.jpg" height="351 width="280"></div>
-      <div class="block block9"><img src="../photos/dada3.jpg" height="350 width="280"></div>
+      <div class="block block5"><img src="../photos/purple.jpg"></div>
+      <div class="block block6"><img src="../photos/shalom.jpg"></div>
+      <div class="block block7"><img src="../photos/dada1.jpg"></div>
+      <div class="block block8"><img src="../photos/dada2.jpg"></div>
+      <div class="block block9"><img src="../photos/dada3.jpg"></div>
     </div>
   </body>
 </html>
