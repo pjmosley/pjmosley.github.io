@@ -5,11 +5,11 @@
     <style>
       .myGrid {
         display: grid;
-        grid-template-columns: repeat(5, 1fr)
+        grid-template-columns: repeat(5, 1fr);
         grid-auto-rows: minmax(50px, auto);
         grid-template-areas:
         "myHeader myHeader myHeader myHeader myHeader"
-        "sidenav sidenav sidenav content content"
+        "sidenav content content content content"
         "footer footer footer footer footer";
 
       }
@@ -34,7 +34,7 @@
         grid-area: footer
       }
       img {
-        grid-area: content;
+        width: 600px;
       }
     </style>
   </head>
@@ -73,7 +73,7 @@
           culpa ingeniis incurreret. Est nulla illum et iudicem an et
           non dolore quibusdam.
         </p>
-        <img src="../photos/store.jpg" width="600">
+        <img src="../photos/store.jpg">
         <p>
           Doctrina irure anim voluptate fore, export vidisse
           fidelissimae. Malis senserit eiusmod, sed dolore quamquam
